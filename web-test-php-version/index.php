@@ -70,7 +70,7 @@
                     $sql = "SELECT * FROM carlist";
                     $res = $conn->query($sql);
 
-                    echo '<table border="1" style="width: 70%; margin-left: auto; margin-right: auto;">';
+                    echo '<table border="0" style="width: 70%; margin-left: auto; margin-right: auto; background-color: olive;">';
                     echo '<thead>';
                     echo '<tr>';
                     echo '<th>CarID</th>';
@@ -84,22 +84,22 @@
                     echo '</tr>';
                     echo '</thead>';
                     echo '<tbody>';
-                    foreach ($res as $request) {
+                    foreach ($res as $result) {
                         echo '<tr>';
-                        echo '<td>' . $request["carid"] . '</td>';
-                        echo '<td>' . $request["regisplate"] . '</td>';
-                        echo '<td>' . $request["brand"] . '</td>';
-                        echo '<td>' . $request["model"] . '</td>';
-                        echo '<td>' . $request["price"] . '</td>';
-                        echo '<td>' . $request["note"] . '</td>';
-                        echo '<td><a href="edit.php?carid=' .$request["carid"].'
-                        &regisplate='.$request["regisplate"].'
-                        &brand='.$request["brand"].'
-                        &model='.$request["model"].'
-                        &price='.$request["price"].'
-                        &note='.$request["note"].'">Edit This Car</a></td>';
+                        echo '<td>' . $result["carid"] . '</td>';
+                        echo '<td>' . $result["regisplate"] . '</td>';
+                        echo '<td>' . $result["brand"] . '</td>';
+                        echo '<td>' . $result["model"] . '</td>';
+                        echo '<td>' . $result["price"] . '</td>';
+                        echo '<td>' . $result["note"] . '</td>';
+                        echo '<td><a href="edit.php?carid=' .$result["carid"].'
+                        &regisplate='.$result["regisplate"].'
+                        &brand='.$result["brand"].'
+                        &model='.$result["model"].'
+                        &price='.$result["price"].'
+                        &note='.$result["note"].'">Edit This Car</a></td>';
 
-                        echo '<td><a href="/PHP/delete.php?carid=' . $request["carid"] . '">Delete This Car</a></td>';
+                        echo '<td><a href="/PHP/delete.php?carid=' . $result["carid"] . '">Delete This Car</a></td>';
 
                         echo '</tr>';
                     }

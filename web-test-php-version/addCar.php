@@ -65,7 +65,7 @@
             <td class="body2">
 
               <div class="form-container">
-                <form action="/PHP/addcar.php" method="POST" onsubmit="return validateForm()">
+                <form action="<?php $back?>" method="POST" onsubmit="return validateForm()">
                   <label for="regisplate">Registration Plate:</label>
                   <input type="text" id="regisplate" name="regisplate" required>
 
