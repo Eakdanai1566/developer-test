@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Neo Echo Funeral</title>
+    <title>Car List</title>
     <link rel="stylesheet" href="CSS/index.css">
     <style>
       .form-container {
@@ -70,7 +70,7 @@
                     $sql = "SELECT * FROM carlist";
                     $res = $conn->query($sql);
 
-                    echo '<table border="0" style="width: 70%; margin-left: auto; margin-right: auto; background-color: olive;">';
+                    echo '<table border="0" style="width: 70%; margin-left: auto; margin-right: auto; background-color: #90EE90;">';
                     echo '<thead>';
                     echo '<tr>';
                     echo '<th>CarID</th>';
