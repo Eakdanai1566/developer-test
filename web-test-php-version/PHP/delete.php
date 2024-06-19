@@ -1,5 +1,6 @@
 <?php
     require("conn.php");
+    $delete;
 
     $carid = $_GET['carid'];
         

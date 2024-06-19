@@ -65,7 +65,7 @@
             <td class="body2">
 
               <div class="form-container">
-                <form action="<?php $back?>" method="POST" onsubmit="return validateForm()">
+                <form action="/PHP/add.php" method="POST" onsubmit="return validateForm()">
                   <label for="regisplate">Registration Plate:</label>
                   <input type="text" id="regisplate" name="regisplate" required>
 
@@ -81,7 +81,7 @@
                   <label for="note">Note:</label>
                   <input type="text-box" id="note" name="note">
 
-                  <input type="submit" value="Submit">
+                  <input type="submit" value="Add">
                 </form>
               </div>
             </td>
