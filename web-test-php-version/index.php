@@ -1,6 +1,5 @@
 <?php
     require("PHP/conn.php");
-    require("PHP/delete.php");
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -93,7 +92,13 @@
                         echo '<td>' . $request["model"] . '</td>';
                         echo '<td>' . $request["price"] . '</td>';
                         echo '<td>' . $request["note"] . '</td>';
-                        echo '<td><a href="edit.php?carid=' . $request["carid"] . '">Edit This Car</a></td>';
+                        echo '<td><a href="edit.php?carid=' .$request["carid"].'
+                        &regisplate='.$request["regisplate"].'
+                        &brand='.$request["brand"].'
+                        &model='.$request["model"].'
+                        &price='.$request["price"].'
+                        &note='.$request["note"].'">Edit This Car</a></td>';
+
                         echo '<td><a href="/PHP/delete.php?carid=' . $request["carid"] . '">Delete This Car</a></td>';
 
                         echo '</tr>';

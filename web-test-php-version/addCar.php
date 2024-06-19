@@ -75,6 +75,9 @@
                   <label for="model">model:</label>
                   <input type="text" id="model" name="model">
 
+                  <label for="price">price:</label>
+                  <input type="text" id="price" name="price">
+
                   <label for="note">Note:</label>
                   <input type="text-box" id="note" name="note">
 

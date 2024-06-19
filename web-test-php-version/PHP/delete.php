@@ -1,7 +1,12 @@
 <?php
-    function delete_car($carid){
-        require("conn.php");
+    require("conn.php");
 
-        $delete = $conn->query("DELETE FROM cars WHERE carid = $carid");
-    }
+    $carid = $_GET['carid'];
+        
+    $sql = "DELETE FROM carlist WHERE carid = $carid";
+
+    $delete = $conn->query($sql);
+
+    header("Location: /index.php");
+    exit();
 ?>

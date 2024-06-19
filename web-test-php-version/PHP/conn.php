@@ -3,8 +3,6 @@
     $dbusername = "root";
     $dbpassword = "";
     $dbname = "cars";
-     
-    // Create connection
-    $conn = new mysqli($servername, $dbusername, $dbpassword, $dbname);
 
+    $conn = new mysqli($servername, $dbusername, $dbpassword, $dbname);
 ?>
